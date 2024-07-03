@@ -1,8 +1,0 @@
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/catch2_main.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/word_ladder.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/debugging.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/word_ladder_test_exe.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/word_ladder_benchmark_exe.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/test.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/edit_cache.dir
-/Users/wenditang/Desktop/6771/ass1/ass1/CMakeFiles/rebuild_cache.dir

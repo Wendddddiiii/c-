@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/debugging.dir/src/main.cpp.o -o debugging  libcatch2_main.a libword_ladder.a libcatch2_main.a 

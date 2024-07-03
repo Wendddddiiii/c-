@@ -1,8 +1,0 @@
-/import/adams/7/z5461448/ass1/build/CMakeFiles/catch2_main.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/word_ladder.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/debugging.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/word_ladder_test_exe.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/word_ladder_benchmark_exe.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/test.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/edit_cache.dir
-/import/adams/7/z5461448/ass1/build/CMakeFiles/rebuild_cache.dir
