@@ -33,3 +33,6 @@ Person *const p = &p1;//指针是const
 //* 在前 指针是const *在后 对象是const
 //p is a const pointer to a Person.
 //This means cannot change the pointer p to point to a different Person object
+
+
+

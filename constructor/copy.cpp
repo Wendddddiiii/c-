@@ -21,7 +21,7 @@ public:
 
      // Destructor
     ~my_vec() {
-        delete[] data_;
+        delete[] data_; 
     }
 private:
     int* data_;
