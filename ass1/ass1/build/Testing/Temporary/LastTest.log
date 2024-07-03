@@ -1,0 +1,39 @@
+Start testing: Jun 14 15:58 AEST
+----------------------------------------------------------
+1/2 Testing: word_ladder_test
+1/2 Test: word_ladder_test
+Command: "/import/adams/7/z5461448/ass1/build/word_ladder_test_exe"
+Directory: /import/adams/7/z5461448/ass1/build
+"word_ladder_test" start time: Jun 14 15:58 AEST
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (11 assertions in 7 test cases)
+
+<end of output>
+Test time =   0.50 sec
+----------------------------------------------------------
+Test Passed.
+"word_ladder_test" end time: Jun 14 15:58 AEST
+"word_ladder_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: word_ladder_benchmark
+2/2 Test: word_ladder_benchmark
+Command: "/import/adams/7/z5461448/ass1/build/word_ladder_benchmark_exe"
+Directory: /import/adams/7/z5461448/ass1/build
+"word_ladder_benchmark" start time: Jun 14 15:58 AEST
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"word_ladder_benchmark" end time: Jun 14 15:58 AEST
+"word_ladder_benchmark" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 14 15:58 AEST
