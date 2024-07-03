@@ -44,15 +44,17 @@ int main() {
 //generates a compiler error if try to pass-by-value
 //don't need a definition
 
-Person copy_func(char *who) {
-    Person local(who);
-    local.print();
-    return local; // copy ctor called!
-}
+// copy ctor called!
+// Person copy_func(char *who) {
+//     Person local(who);
+//     local.print();
+//     return local; 
+// }
 
+// no copy needed!
+// Person nocopy_func(char *who) {
+//     return Person(who);
+// } 
 
-Person nocopy_func(char *who) {
-    return Person(who);
-} // no copy needed!
 //用string,而不是char*
 
