@@ -63,6 +63,32 @@ auto invert(const std::map<std::string, int>& mp) -> std::map<int, std::string> 
 
 }
 
+//using ->
+auto inverted(const std::map<std::string, int> &mp) -> std::map<int, std::string> {
+    auto inverted = std::map<int, std::string>{};
+
+
+    //iterate over each key-value pair in the input map
+    for (const auto &[k, v] : mp) {
+
+        //try to find the value (v) in the inverted map; if v is not found, it will be equal to inverted.end(), which represents a position past the last element.
+        if (auto it = inverted.find(v); it != inverted.end()) {
+            //if found, check if the current string k is longer than existing one
+            //->: Dereferencing it, access the second member of the pair 
+            //it是iterator //在 std::pair<const int, std::string>里first is the key(int), second is the value (std::string)
+            if (it->second.size() < k.size()) {   // k is std::string
+                inverted[v] = k; 
+            } else {  
+                // no change, current "k" isn't the longest string we've seen for this "v"
+            }
+        } else { 
+            inverted.insert({v, k});//最开始为空存进来的时候就已经调换顺序, 所以dereference it的时候second是std::string, first is int
+        }
+    }
+
+    return inverted;
+}
+
 int main() {
     std::map<std::string, int> originalMap = {
         {"Alice", 30},
