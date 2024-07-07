@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <span>
-#include <float>
+
 
 
 //std::rotate
@@ -71,7 +71,7 @@ auto third(std::span<float> floats) {
         v.push_back(f);
     }
     //can be replaced by 
-    auto v - std::vector<float>{};
+    auto v = std::vector<float>{};
     std::copy(floats.begin(), floats.end(), std::back_inserter(v));
 
     auto m = std::numeric_limits<float>::max();
