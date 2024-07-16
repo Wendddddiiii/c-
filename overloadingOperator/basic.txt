@@ -1,0 +1,47 @@
+//allow user-defined types to act like built in types 可以改变运算符的行为
+//another way to make a func call
+
+//Only existing operators can be overloaded
+//Operators must be overloaded on a class or enmuneration type
+//Overloaded operators must preserve number of operands, preserve precendence
+
+//C++ overloaded operator
+//Can be a member func: implict first argument 
+//const String String::operator + (const String& that);
+//Can be a global(free) func
+//both arguments explicit 
+//const String operator+(const String& r, const String& 1);
+//operator class 不是任何类的成员,把括号里两个参数加起来
+//？？？
+
+//How to overload 
+//as member function: implicit first argument, no tpye conversion performed on receiver, must have access to class definition
+//Member Functions
+Integer x(1), y(5), z;
+x + y; ===> x.operator + (y)
+运算符左边的叫receiver 决定用哪个+， x（）里面是int所以上面用int的加法
+No type conversion performed on receiver
+
+Unary operators: operators that operate on a single operand.  
+like int x += 5;
+int x = 5;
+--x;
+x--;
+
+Binary operators: operate on two operands. 
+Addition: int x = 5 + 3;
+Modular: int x = 5 % 3;
+bool flag = (true && false); 
+int x = 5 & 3; 
+bool flag = (5 == 3); // flag is false
+
+Free Function: Not associated with any class or object.
+Cannot access private or protected members of a class directly.
+
+
+Member Function: Associated with a class and operates on class objects.
+Can access private and protected members of the class it belongs to.
+Unary operators should be members
+= () [] -> ->* must be members
+assignment operators should be members
+All other binary operators as non-members 
