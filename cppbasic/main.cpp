@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-
 // calculate area of rectangle
 double calculateRecArea(double height, double width) {
     return height * width;
