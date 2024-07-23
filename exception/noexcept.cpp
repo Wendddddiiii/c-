@@ -20,7 +20,7 @@ public:
             }
         }
     }
-    //Copy Assignment with noexcept (using copy-and-swap idiom)
+    //Copy Assignment with noexcept (using copy-and-swap idiom) 
     // Swap function (noexcept)
     void swap(SafeString& other) noexcept {
         std::swap(data, other.data);
