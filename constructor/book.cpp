@@ -19,7 +19,13 @@ public:
         author = Author;
         pages = Pages;
     }
-
+    bool isMale(){
+        if (author == "jk") {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
 };
 
@@ -29,7 +35,10 @@ int main() {
     Book book3; 
     book2.title = "hunger games";
     cout << book1.title << endl;
+    cout << book1.isMale() << endl;
     cout << book2.title << endl;
+    cout << book2.isMale() << endl;
+
     cout << book3.title << endl;
 
     return 0;
