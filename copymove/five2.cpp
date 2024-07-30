@@ -97,11 +97,12 @@ public:
         cout << "move assignmnet operator" << endl;
         if (this != &rhs) {
             delete[] array;
+            size = rhs.size;
+            array = rhs.array;
+            rhs.array = nullptr;
+            rhs.size = 0;
         }
-        size = rhs.size;
-        array = rhs.array;
-        rhs.array = nullptr;
-        rhs.size = 0;
+
         return *this;
     }
 
