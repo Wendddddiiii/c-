@@ -40,13 +40,10 @@ public:
     //move assignment operator
     my_vec& operator=(my_vec&& other) noexcept {
         if (this != &other) {
-            delete[] data_;
-            data_ = other.data_;
-            size_ = other.size_;
-            capacity_ = other.capacity_;
-            other.data_ = nullptr;
-            other.size_ = 0;
-            other.capacity_ = 0;
+            std::swap(data_, other.data_);
+            std::swap(size_, other.size_);
+            std::swap(capacity_, other.capacity_);
+            return *this;
         }
         return *this;
     }
@@ -120,28 +117,3 @@ private:
 
 
 
-int main() {
-    my_vec v = {1, 2, 3, 4, 5};
-    
-    std::cout << "Size: " << v.size() << ", Capacity: " << v.capacity() << std::endl;
-    
-    v.push_back(6);
-    std::cout << "After push_back: Size: " << v.size() << ", Capacity: " << v.capacity() << std::endl;
-    
-    for (std::size_t i = 0; i < v.size(); ++i) {
-        std::cout << v[i] << " ";
-    }
-    std::cout << std::endl;
-    
-    v.pop_back();
-    std::cout << "After pop_back: Size: " << v.size() << std::endl;
-    
-    try {
-        std::cout << "Element at index 2: " << v.at(2) << std::endl;
-        std::cout << "Element at index 10: " << v.at(10) << std::endl;
-    } catch (const std::out_of_range& e) {
-        std::cout << "Exception caught: " << e.what() << std::endl;
-    }
-    
-    return 0;
-}
